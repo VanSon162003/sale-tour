@@ -1,0 +1,46 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Inter", serif;
+    // color: var(--text-color);
+    // background: var(--body-bg);
+}
+
+.font-poppins {
+    font-family: "Poppins", serif;
+}
+
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+    color: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+input {
+    border: none;
+    outline: none;
+    background: transparent;
+}
