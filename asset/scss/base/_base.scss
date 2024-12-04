@@ -11,12 +11,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Inter", serif;
-    // color: var(--text-color);
-    // background: var(--body-bg);
-}
-
-.font-poppins {
-    font-family: "Poppins", serif;
+    color: var(--primary-text-color);
 }
 
 button,
@@ -43,4 +38,46 @@ input {
     border: none;
     outline: none;
     background: transparent;
+}
+
+.heading {
+    font-family: var(--font--poppins);
+    color: var(--heading-color);
+}
+
+h1.heading {
+    font-weight: 700;
+    font-size: 6.2rem;
+    line-height: 70px;
+}
+
+h2.heading {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+h3.heading {
+    font-weight: 600;
+    font-size: 2.6rem;
+    line-height: 26px;
+}
+
+h4.heading {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 32px;
+}
+h5.heading {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 30px;
+}
+
+.desc {
+    line-height: 26px;
+}
+.desc--sm {
+    font-size: 1.4rem;
+    line-height: 20px;
 }

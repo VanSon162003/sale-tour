@@ -2,11 +2,11 @@
 
 // Breakpoints, dimension, container, row, column, v.v
 $grid-breakpoints: (
-    xxl: 1400px,
-    xl: 1200px,
+    // xxl: 1400px,
+    xl: 1170px,
     lg: 992px,
     md: 768px,
-    sm: 576px,
+    sm: 576px
 );
 $container-max-widths: (
     sm: 100%,
@@ -43,7 +43,7 @@ $gutters: (
 
 .container {
     @extend .container-fluid;
-    width: 1370px;
+    width: 1170px;
 }
 
 .row {

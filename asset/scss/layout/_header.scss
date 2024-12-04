@@ -1,0 +1,121 @@
+@use "../utils/" as ut;
+%d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header {
+    position: sticky;
+    top: -24px;
+    padding-top: 32px;
+    padding-bottom: 8px;
+    // box-shadow: 0 20px 16px 0 rgba(189, 186, 186, 0.5);
+    &__inner {
+        @extend %d-flex;
+    }
+
+    .btn {
+        @include ut.screen(lg) {
+            display: none;
+        }
+    }
+
+    @include ut.screen(lg) {
+        input:checked ~ nav {
+            translate: 0 0;
+        }
+    }
+}
+
+.nav {
+    &__list {
+        @extend %d-flex;
+
+        @include ut.screen(lg) {
+            margin-top: 20px;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 20px;
+        }
+    }
+
+    &__item {
+        position: relative;
+        padding: 0 17px;
+
+        font-family: var(--font-poppins);
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 16px;
+
+        &::after {
+            display: inline-block;
+
+            position: absolute;
+            bottom: -3px;
+            left: 17px;
+
+            content: "";
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-color);
+            border-radius: 99px;
+            transition: 0.3s;
+        }
+        &:hover {
+            cursor: pointer;
+            color: var(--heading-color);
+        }
+        &:hover::after {
+            width: 12px;
+        }
+    }
+
+    @include ut.screen(lg) {
+        position: fixed;
+        inset: 0 0 0 20%;
+        margin-left: 0;
+        padding: 20px;
+        border-radius: 20px 0 0 20px;
+        background: #fff;
+        z-index: 9;
+        translate: 100% 0;
+        transition: 0.3s;
+    }
+}
+
+.logo {
+    img {
+        @include ut.screen(lg) {
+            width: 152px;
+        }
+    }
+}
+
+.menu {
+    @include ut.screen(lg) {
+        display: block;
+    }
+}
+
+@include ut.screen(lg) {
+    .overlay {
+        display: block;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s;
+        position: fixed;
+        z-index: 8;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    input:checked ~ .overlay {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .close {
+        display: inline-block;
+        margin-left: calc(100% - 37px);
+    }
+}

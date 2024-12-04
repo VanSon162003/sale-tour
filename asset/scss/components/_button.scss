@@ -1,0 +1,67 @@
+@use "../utils/" as ut;
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    color: #fff;
+    border-radius: 8px;
+    user-select: none;
+
+    &--primary {
+        font-family: var(--font-poppins);
+        padding: 0 32px;
+
+        background-color: var(--primary-color);
+        box-shadow: 0 30px 30px -18px var(--btn-primary-shadow);
+
+        font-size: 1.8rem;
+        font-weight: 600;
+        @include ut.screen(lg) {
+            padding: 0 20px;
+        }
+    }
+    &--header {
+        padding: 0 28px;
+
+        font-family: var(--font-poppins);
+        font-size: 1.2rem;
+        font-weight: 500;
+        background-color: var(--sub-primary-color);
+    }
+
+    &--routed {
+        padding: 0 16px;
+        background-color: transparent;
+        border: 1px solid var(--sub-primary-color);
+        color: var(--sub-primary-color);
+
+        font-size: 1.4rem;
+        font-weight: 500;
+
+        &:hover {
+            background-color: var(--sub-primary-color);
+            color: #fff;
+        }
+    }
+
+    &--search {
+        padding: 0 40px;
+        gap: 12px;
+        background-color: var(--btn-search-color);
+        box-shadow: 0 25px 25px -20px var(--btn-search-shadow);
+
+        font-size: 1.8rem;
+        font-weight: 500;
+
+        @include ut.screen(lg) {
+            padding: 0 20px;
+        }
+    }
+
+    &:hover {
+        opacity: 0.9;
+    }
+}
+
+// min-width: 131 191 170 100 223 117 157
