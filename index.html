@@ -94,7 +94,7 @@
         <!-- css -->
         <link rel="stylesheet" href="./asset/css/main.min.css" />
     </head>
-    <body>
+    <body id="home">
         <!-- header -->
         <header id="header" class="header"></header>
         <script>
@@ -113,66 +113,1183 @@
 
         <main>
             <div class="container">
-                <div class="search-bar">
-                    <div class="row">
-                        <div class="col-lg-12 col-8 offset-lg-0 offset-2">
-                            <div class="search-bar__list">
-                                <div class="search-bar__item">
-                                    <a href="#!" class="search-bar__link"
-                                        ><span class="search-bar__title"
-                                            >Location</span
-                                        ></a
-                                    >
-                                    <a href="#!" class="search-bar__link"
-                                        ><span class="search-bar__desc"
-                                            >Bali, Indonesia</span
-                                        ><img
-                                            src="./asset/icons/arrow-down.svg"
-                                            alt="arrow"
-                                    /></a>
-                                </div>
+                <!-- hero -->
+                <section class="hero">
+                    <!-- hero content -->
+                    <div class="hero__content">
+                        <h1 class="heading hero__heading">
+                            Let's Make Your Best Trip Ever
+                        </h1>
+                        <p class="desc hero__desc">
+                            Plan and book your perfect trip with expert advice,
+                            travel tips, destination information and inspiration
+                            from us.
+                        </p>
+                        <div class="hero__action">
+                            <button class="btn btn--primary">
+                                Discover Now
+                            </button>
 
-                                <div class="search-bar__item">
-                                    <a href="#!" class="search-bar__link"
-                                        ><span class="search-bar__title"
-                                            >City</span
-                                        ></a
-                                    >
-                                    <a href="#!" class="search-bar__link"
-                                        ><span class="search-bar__desc"
-                                            >Prambanan</span
-                                        ><img
-                                            src="./asset/icons/arrow-down.svg"
-                                            alt="arrow"
-                                    /></a>
-                                </div>
-
-                                <div class="search-bar__item">
-                                    <a href="#!" class="search-bar__link"
-                                        ><span class="search-bar__title"
-                                            >Guest</span
-                                        ></a
-                                    >
-                                    <a href="#!" class="search-bar__link"
-                                        ><span class="search-bar__desc"
-                                            >8 Persons</span
-                                        ><img
-                                            src="./asset/icons/arrow-down.svg"
-                                            alt="arrow"
-                                    /></a>
-                                </div>
-
-                                <button class="btn btn--search">
+                            <div class="hero__play">
+                                <a href="#!">
                                     <img
-                                        src="./asset/icons/search.svg"
-                                        alt="search"
+                                        src="./asset/icons/Play.svg"
+                                        alt="play"
+                                        class="hero__play--img"
                                     />
-                                    <span>Search</span>
+                                </a>
+                                <a href="#!" class="hero__play--more"
+                                    >Learn More</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- hero media -->
+
+                    <div class="hero__media">
+                        <img
+                            src="./asset/imgs/Girl.png"
+                            alt="Let's Make Your Best Trip Ever"
+                            class="hero__media--img"
+                        />
+                        <div class="hero__media--card">
+                            <div class="hero__media--load">
+                                <img
+                                    src="./asset/icons/loading.svg"
+                                    alt="loading"
+                                    class="hero__media--times"
+                                />
+                                <span class="hero__media--card-qnt-load"
+                                    >39</span
+                                >
+                                <p class="hero__media--card-desc-load">
+                                    Times traveled
+                                </p>
+                            </div>
+
+                            <span class="hero__media--card-qnt">224</span>
+                            <p class="hero__media--card-desc">
+                                Total trip (month)
+                            </p>
+                        </div>
+
+                        <img
+                            src="./asset/icons/Shapes.svg"
+                            alt="shapes"
+                            class="hero__media--shapes"
+                        />
+                    </div>
+
+                    <!-- hero countdown -->
+
+                    <div class="hero__countdown">
+                        <div class="hero__countdown--item">
+                            <div class="hero__countdown--icon">
+                                <a href="#!">
+                                    <img
+                                        src="./asset/icons/person.svg"
+                                        alt="person"
+                                    />
+                                </a>
+                            </div>
+
+                            <div class="hero__countdown--content">
+                                <a href="#!">
+                                    <span class="hero__countdown--qnt">12</span>
+                                </a>
+
+                                <p class="hero__countdown--desc desc--sm">
+                                    Years Experiences
+                                </p>
+                            </div>
+                        </div>
+                        <div class="hero__countdown--item">
+                            <div class="hero__countdown--icon">
+                                <a href="#!">
+                                    <img
+                                        src="./asset/icons/cup.svg"
+                                        alt="cup"
+                                    />
+                                </a>
+                            </div>
+
+                            <div class="hero__countdown--content">
+                                <a href="#!">
+                                    <span class="hero__countdown--qnt">29</span>
+                                </a>
+
+                                <p class="hero__countdown--desc desc--sm">
+                                    Awards Gained
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="hero__countdown--item">
+                            <div class="hero__countdown--icon">
+                                <a href="#!">
+                                    <img
+                                        src="./asset/icons/home.svg"
+                                        alt="home"
+                                    />
+                                </a>
+                            </div>
+
+                            <div class="hero__countdown--content">
+                                <a href="#!">
+                                    <span class="hero__countdown--qnt"
+                                        >725+</span
+                                    >
+                                </a>
+
+                                <p class="hero__countdown--desc desc--sm">
+                                    Property Build
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- search bar -->
+                <section id="search-bar" class="search-bar"></section>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        fetch("./templates/search-bar.html")
+                            .then((response) => {
+                                if (!response.ok)
+                                    throw new Error(
+                                        "Network response was not ok"
+                                    );
+                                return response.text();
+                            })
+                            .then((search) => {
+                                document.querySelector(
+                                    "#search-bar"
+                                ).innerHTML = search;
+                            });
+                    });
+                </script>
+
+                <!-- tour -->
+
+                <section class="tour">
+                    <div class="row">
+                        <div class="col">
+                            <div class="tour__top">
+                                <div class="tour__top--content">
+                                    <h2 class="tour__top--heading heading">
+                                        Our Best Tour
+                                    </h2>
+                                    <p class="tour__top--desc desc">
+                                        These are also locations where it’s easy
+                                        to feel healthier, happier and less
+                                        stressed than in America. And for more
+                                        destinations on the Global Retirement
+                                        Index.
+                                    </p>
+                                </div>
+
+                                <button class="btn btn--primary">
+                                    See all tours
                                 </button>
                             </div>
                         </div>
                     </div>
-                </div>
+
+                    <div class="tour__list">
+                        <div
+                            class="row row-cols-3 row-cols-lg-2 row-cols-md-1 g-3 offset-md-2 offset-sm-0"
+                        >
+                            <!-- item 1 -->
+                            <div class="col">
+                                <article class="tour__item">
+                                    <div class="tour__item--media">
+                                        <a href="#!"
+                                            ><img
+                                                src="./asset/imgs/tour-1.png"
+                                                alt="Cairns Travel"
+                                                class="tour__item--img"
+                                        /></a>
+                                    </div>
+
+                                    <div class="tour__item--content">
+                                        <a href="#!">
+                                            <h4
+                                                class="tour__item--worth heading"
+                                            >
+                                                $150/day
+                                            </h4>
+                                        </a>
+
+                                        <a href="#!">
+                                            <span class="tour__item--name"
+                                                >Cairns Travel</span
+                                            >
+                                        </a>
+
+                                        <div class="tour__item--positioning">
+                                            <img
+                                                src="./asset/icons/positioning.svg"
+                                                alt="positioning"
+                                            />
+                                            <p class="desc--sm">
+                                                Calrns QLD, Australia
+                                            </p>
+                                        </div>
+
+                                        <div class="tour__item--date">
+                                            <div class="tour__item--calendar">
+                                                <img
+                                                    src="./asset/icons/calendar.svg"
+                                                    alt="calendar"
+                                                />
+                                                <p class="desc--sm">
+                                                    Oct 28, 2021
+                                                </p>
+                                            </div>
+
+                                            <div class="tour__item--calendar">
+                                                <img
+                                                    src="./asset/icons/clock.svg"
+                                                    alt="clock"
+                                                />
+                                                <p class="desc">5 Days</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- item 2 -->
+
+                            <div class="col">
+                                <article class="tour__item">
+                                    <div class="tour__item--media">
+                                        <a href="#!"
+                                            ><img
+                                                src="./asset/imgs/tour-2.png"
+                                                alt="Orlando Travel"
+                                                class="tour__item--img"
+                                        /></a>
+                                    </div>
+
+                                    <div class="tour__item--content">
+                                        <a href="#!">
+                                            <h4
+                                                class="tour__item--worth heading"
+                                            >
+                                                $110/day
+                                            </h4>
+                                        </a>
+
+                                        <a href="#!">
+                                            <span class="tour__item--name"
+                                                >Orlando Travel</span
+                                            >
+                                        </a>
+
+                                        <div class="tour__item--positioning">
+                                            <img
+                                                src="./asset/icons/positioning.svg"
+                                                alt="positioning"
+                                            />
+                                            <p class="desc--sm">
+                                                Orlando, FL, USA
+                                            </p>
+                                        </div>
+
+                                        <div class="tour__item--date">
+                                            <div class="tour__item--calendar">
+                                                <img
+                                                    src="./asset/icons/calendar.svg"
+                                                    alt="calendar"
+                                                />
+                                                <p class="desc--sm">
+                                                    Jul 30,2021
+                                                </p>
+                                            </div>
+
+                                            <div class="tour__item--calendar">
+                                                <img
+                                                    src="./asset/icons/clock.svg"
+                                                    alt="clock"
+                                                />
+                                                <p class="desc">3 Days</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- item 3 -->
+
+                            <div class="col">
+                                <article class="tour__item">
+                                    <div class="tour__item--media">
+                                        <a href="#!"
+                                            ><img
+                                                src="./asset/imgs/tour-3.png"
+                                                alt="Malaysia "
+                                                class="tour__item--img"
+                                        /></a>
+                                    </div>
+
+                                    <div class="tour__item--content">
+                                        <a href="#!">
+                                            <h4
+                                                class="tour__item--worth heading"
+                                            >
+                                                $136/day
+                                            </h4>
+                                        </a>
+
+                                        <a href="#!">
+                                            <span class="tour__item--name"
+                                                >Malaysia
+                                            </span>
+                                        </a>
+
+                                        <div class="tour__item--positioning">
+                                            <img
+                                                src="./asset/icons/positioning.svg"
+                                                alt="positioning"
+                                            />
+                                            <p class="desc--sm">Malaysia</p>
+                                        </div>
+
+                                        <div class="tour__item--date">
+                                            <div class="tour__item--calendar">
+                                                <img
+                                                    src="./asset/icons/calendar.svg"
+                                                    alt="calendar"
+                                                />
+                                                <p class="desc--sm">
+                                                    Jul 29, 2021
+                                                </p>
+                                            </div>
+
+                                            <div class="tour__item--calendar">
+                                                <img
+                                                    src="./asset/icons/clock.svg"
+                                                    alt="clock"
+                                                />
+                                                <p class="desc">Days</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- choose -->
+
+                <section id="choose" class="choose"></section>
+
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        fetch("./templates/choose.html")
+                            .then((response) => {
+                                if (!response.ok)
+                                    throw new Error(
+                                        "Network response was not ok"
+                                    );
+                                return response.text();
+                            })
+                            .then((choose) => {
+                                document.querySelector("#choose").innerHTML =
+                                    choose;
+                            });
+                    });
+                </script>
+
+                <!-- trending -->
+
+                <section class="trending">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="trending__top">
+                                <div class="trending__top--content">
+                                    <h2 class="heading trending__top--heading">
+                                        Trending 2022
+                                    </h2>
+                                    <p class="desc trending__top--desc">
+                                        Sost Brilliant reasons Entrada should be
+                                        your one-stop-shop!
+                                    </p>
+                                </div>
+
+                                <div class="trending__top--action">
+                                    <a href="#!" class="trending__top--icon">
+                                        <svg
+                                            class="trending__top--icon-arr"
+                                            width="16"
+                                            height="8"
+                                            viewBox="0 0 16 8"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M15.8167 3.43259C15.8165 3.4324 15.8163 3.43218 15.8161 3.43199L12.5504 0.181998C12.3057 -0.0614707 11.91 -0.0605647 11.6665 0.184123C11.423 0.428779 11.4239 0.824497 11.6686 1.068L13.8612 3.24999H0.625C0.279813 3.24999 0 3.52981 0 3.87499C0 4.22018 0.279813 4.49999 0.625 4.49999H13.8612L11.6686 6.68199C11.4239 6.92549 11.423 7.32121 11.6665 7.56586C11.91 7.81058 12.3058 7.81143 12.5504 7.56799L15.8162 4.31799C15.8163 4.31781 15.8165 4.31759 15.8167 4.3174C16.0615 4.07309 16.0607 3.67609 15.8167 3.43259Z"
+                                                fill="currentcolor"
+                                            />
+                                        </svg>
+                                    </a>
+                                    <a href="#!" class="trending__top--icon">
+                                        <svg
+                                            class="trending__top--icon-arr"
+                                            width="16"
+                                            height="8"
+                                            viewBox="0 0 16 8"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M15.8167 3.43259C15.8165 3.4324 15.8163 3.43218 15.8161 3.43199L12.5504 0.181998C12.3057 -0.0614707 11.91 -0.0605647 11.6665 0.184123C11.423 0.428779 11.4239 0.824497 11.6686 1.068L13.8612 3.24999H0.625C0.279813 3.24999 0 3.52981 0 3.87499C0 4.22018 0.279813 4.49999 0.625 4.49999H13.8612L11.6686 6.68199C11.4239 6.92549 11.423 7.32121 11.6665 7.56586C11.91 7.81058 12.3058 7.81143 12.5504 7.56799L15.8162 4.31799C15.8163 4.31781 15.8165 4.31759 15.8167 4.3174C16.0615 4.07309 16.0607 3.67609 15.8167 3.43259Z"
+                                                fill="currentcolor"
+                                            />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="trending__list">
+                        <div
+                            class="row row-cols-3 row-cols-lg-2 g-lg-4 row-cols-md-1 g-md-0"
+                        >
+                            <div class="col">
+                                <article class="trending__item">
+                                    <a href="#!">
+                                        <img
+                                            src="./asset/imgs/trending-1.png"
+                                            alt="Mountain Hiking Tour"
+                                            class="trending__item--img"
+                                        />
+                                    </a>
+                                    <a href="#!">
+                                        <h5
+                                            class="trending__item--title heading"
+                                        >
+                                            Mountain Hiking Tour
+                                        </h5>
+                                    </a>
+                                    <div class="trending__item--desc">
+                                        <span>12 Places</span>
+                                        <div class="stock"></div>
+                                        <span>3 Activites</span>
+                                    </div>
+
+                                    <div class="trending__item--action">
+                                        <strong class="trending__item--qnt"
+                                            >$895.50</strong
+                                        >
+                                        <button class="btn btn--routed">
+                                            Book Now
+                                        </button>
+                                    </div>
+
+                                    <div class="trending__item--logo">
+                                        <a
+                                            href="#!"
+                                            class="trending__item--logo-img"
+                                        >
+                                            <img
+                                                src="./asset/imgs/logo-2.png"
+                                                alt="Safe Tour Agency"
+                                            />
+                                        </a>
+
+                                        <span>Safe Tour Agency</span>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div class="col">
+                                <article class="trending__item">
+                                    <a href="#!">
+                                        <img
+                                            src="./asset/imgs/trending-2.png"
+                                            alt="Tran Skyline"
+                                            class="trending__item--img"
+                                        />
+                                    </a>
+                                    <a href="#!">
+                                        <h5
+                                            class="trending__item--title heading"
+                                        >
+                                            Tran Skyline
+                                        </h5>
+                                    </a>
+                                    <div class="trending__item--desc">
+                                        <span>12 Places</span>
+                                        <div class="stock"></div>
+                                        <span>3 Activites</span>
+                                    </div>
+
+                                    <div class="trending__item--action">
+                                        <strong class="trending__item--qnt"
+                                            >$769.99</strong
+                                        >
+                                        <button class="btn btn--routed">
+                                            Book Now
+                                        </button>
+                                    </div>
+
+                                    <div class="trending__item--logo">
+                                        <a
+                                            href="#!"
+                                            class="trending__item--logo-img"
+                                        >
+                                            <img
+                                                src="./asset/imgs/logo-2.png"
+                                                alt="Safe Tour Agency"
+                                            />
+                                        </a>
+
+                                        <span>Safe Tour Agency</span>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div class="col">
+                                <article class="trending__item">
+                                    <a href="#!">
+                                        <img
+                                            src="./asset/imgs/trending-3.png"
+                                            alt="Forest Wild Life"
+                                            class="trending__item--img"
+                                        />
+                                    </a>
+                                    <a href="#!">
+                                        <h5
+                                            class="trending__item--title heading"
+                                        >
+                                            Forest Wild Life
+                                        </h5>
+                                    </a>
+                                    <div class="trending__item--desc">
+                                        <span>12 Places</span>
+                                        <div class="stock"></div>
+                                        <span>3 Activites</span>
+                                    </div>
+
+                                    <div class="trending__item--action">
+                                        <strong class="trending__item--qnt"
+                                            >$939.80</strong
+                                        >
+                                        <button class="btn btn--routed">
+                                            Book Now
+                                        </button>
+                                    </div>
+
+                                    <div class="trending__item--logo">
+                                        <a
+                                            href="#!"
+                                            class="trending__item--logo-img"
+                                        >
+                                            <img
+                                                src="./asset/imgs/logo-2.png"
+                                                alt="Safe Tour Agency"
+                                            />
+                                        </a>
+
+                                        <span>Safe Tour Agency</span>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div class="col">
+                                <article class="trending__item">
+                                    <a href="#!">
+                                        <img
+                                            src="./asset/imgs/trending-4.png"
+                                            alt="Tran Skyline"
+                                            class="trending__item--img"
+                                        />
+                                    </a>
+                                    <a href="#!">
+                                        <h5
+                                            class="trending__item--title heading"
+                                        >
+                                            Tran Skyline
+                                        </h5>
+                                    </a>
+                                    <div class="trending__item--desc">
+                                        <span>12 Places</span>
+                                        <div class="stock"></div>
+                                        <span>3 Activites</span>
+                                    </div>
+
+                                    <div class="trending__item--action">
+                                        <strong class="trending__item--qnt"
+                                            >$769.99</strong
+                                        >
+                                        <button class="btn btn--routed">
+                                            Book Now
+                                        </button>
+                                    </div>
+
+                                    <div class="trending__item--logo">
+                                        <a
+                                            href="#!"
+                                            class="trending__item--logo-img"
+                                        >
+                                            <img
+                                                src="./asset/imgs/logo-2.png"
+                                                alt="Safe Tour Agency"
+                                            />
+                                        </a>
+
+                                        <span>Safe Tour Agency</span>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- destination -->
+                <section class="destination">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="destination__top">
+                                <div class="destination__top--content">
+                                    <h2
+                                        class="heading destination__top--heading"
+                                    >
+                                        Top Destination
+                                    </h2>
+                                    <p class="desc destination__top--desc">
+                                        Sost Brilliant reasons Entrada should be
+                                        your one-stop-shop!
+                                    </p>
+                                </div>
+
+                                <button class="btn btn--primary">
+                                    See all destination
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="destination__list">
+                        <div class="row row-cols-lg-2 g-lg-2">
+                            <div class="col col-3">
+                                <div class="destination__list--item">
+                                    <div class="destination__list--content">
+                                        <div class="destination__list--inner">
+                                            <span class="destination__list--qnt"
+                                                >3.5</span
+                                            >
+                                            <div>
+                                                <a href="#!">
+                                                    <h4
+                                                        class="destination__list--title heading"
+                                                    >
+                                                        Vientam
+                                                    </h4>
+                                                </a>
+                                                <span
+                                                    class="destination__list--desc"
+                                                    >Worefall</span
+                                                >
+                                            </div>
+                                        </div>
+                                        <img
+                                            src="./asset/imgs/desti-1.png"
+                                            alt="Viet nam"
+                                            class="destination__list--img"
+                                        />
+                                    </div>
+                                    <div class="destination__list--content">
+                                        <div class="destination__list--inner">
+                                            <span class="destination__list--qnt"
+                                                >3.5</span
+                                            >
+                                            <div>
+                                                <a href="#!">
+                                                    <h4
+                                                        class="destination__list--title heading"
+                                                    >
+                                                        Vientam
+                                                    </h4>
+                                                </a>
+                                                <span
+                                                    class="destination__list--desc"
+                                                    >Worefall</span
+                                                >
+                                            </div>
+                                        </div>
+                                        <img
+                                            src="./asset/imgs/desti-2.png"
+                                            alt="Viet nam"
+                                            class="destination__list--img"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-4">
+                                <div class="destination__list--content">
+                                    <div class="destination__list--inner">
+                                        <span class="destination__list--qnt"
+                                            >3.5</span
+                                        >
+                                        <div>
+                                            <a href="#!">
+                                                <h4
+                                                    class="destination__list--title heading"
+                                                >
+                                                    Vientam
+                                                </h4>
+                                            </a>
+                                            <span
+                                                class="destination__list--desc"
+                                                >Worefall</span
+                                            >
+                                        </div>
+                                    </div>
+                                    <img
+                                        src="./asset/imgs/desti-3.png"
+                                        alt="Viet nam"
+                                        class="destination__list--img"
+                                    />
+                                </div>
+                            </div>
+                            <div class="col col-5 col-lg-12">
+                                <div class="destination__list--item">
+                                    <div class="destination__list--content">
+                                        <div class="destination__list--inner">
+                                            <span class="destination__list--qnt"
+                                                >3.5</span
+                                            >
+                                            <div>
+                                                <a href="#!">
+                                                    <h4
+                                                        class="destination__list--title heading"
+                                                    >
+                                                        Vientam
+                                                    </h4>
+                                                </a>
+                                                <span
+                                                    class="destination__list--desc"
+                                                    >Worefall</span
+                                                >
+                                            </div>
+                                        </div>
+                                        <img
+                                            src="./asset/imgs/desti-4.png"
+                                            alt="Viet nam"
+                                            class="destination__list--img"
+                                        />
+                                    </div>
+
+                                    <div class="destination__list--content">
+                                        <div class="destination__list--inner">
+                                            <span class="destination__list--qnt"
+                                                >3.5</span
+                                            >
+                                            <div>
+                                                <a href="#!">
+                                                    <h4
+                                                        class="destination__list--title heading"
+                                                    >
+                                                        Vientam
+                                                    </h4>
+                                                </a>
+                                                <span
+                                                    class="destination__list--desc"
+                                                    >Worefall</span
+                                                >
+                                            </div>
+                                        </div>
+                                        <img
+                                            src="./asset/imgs/desti-5.png"
+                                            alt="Viet nam"
+                                            class="destination__list--img"
+                                        />
+                                    </div>
+
+                                    <div class="destination__list--content">
+                                        <div class="destination__list--inner">
+                                            <span class="destination__list--qnt"
+                                                >3.5</span
+                                            >
+                                            <div>
+                                                <a href="#!">
+                                                    <h4
+                                                        class="destination__list--title heading"
+                                                    >
+                                                        Vientam
+                                                    </h4>
+                                                </a>
+                                                <span
+                                                    class="destination__list--desc"
+                                                    >Worefall</span
+                                                >
+                                            </div>
+                                        </div>
+                                        <img
+                                            src="./asset/imgs/desti-6.png"
+                                            alt="Viet nam"
+                                            class="destination__list--img"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- services -->
+                <section class="services">
+                    <div class="row">
+                        <div class="col col-12">
+                            <h2 class="heading services__heading">Tour Type</h2>
+                        </div>
+                    </div>
+
+                    <div class="services__list">
+                        <div
+                            class="row row-cols-4 row-cols-xl-2 row-cols-md-1 g-xl-2"
+                        >
+                            <div class="col">
+                                <div class="services__item">
+                                    <a href="#!">
+                                        <img
+                                            src="./asset/icons/city.svg"
+                                            alt="City Tours"
+                                            class="services__item--icon"
+                                        />
+                                    </a>
+                                    <a href="#!">
+                                        <h3
+                                            class="services__item--title heading"
+                                        >
+                                            City Tours
+                                        </h3>
+                                    </a>
+                                    <p class="services__item--desc">
+                                        5 Tours- From <span>550$</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="services__item">
+                                    <a href="#!">
+                                        <img
+                                            src="./asset/icons/beaches.svg"
+                                            alt="Beaches"
+                                            class="services__item--icon"
+                                        />
+                                    </a>
+                                    <a href="#!">
+                                        <h3
+                                            class="services__item--title heading"
+                                        >
+                                            Beaches
+                                        </h3>
+                                    </a>
+                                    <p class="services__item--desc">
+                                        10 Tours- From <span>250$</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="services__item">
+                                    <a href="#!">
+                                        <img
+                                            src="./asset/icons/museum.svg"
+                                            alt="Museum Tours"
+                                            class="services__item--icon"
+                                        />
+                                    </a>
+                                    <a href="#!">
+                                        <h3
+                                            class="services__item--title heading"
+                                        >
+                                            Museum Tours
+                                        </h3>
+                                    </a>
+                                    <p class="services__item--desc">
+                                        5 Tours- From <span>399$</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="services__item">
+                                    <a href="#!">
+                                        <img
+                                            src="./asset/icons/cruises.svg"
+                                            alt="Cruises"
+                                            class="services__item--icon"
+                                        />
+                                    </a>
+                                    <a href="#!">
+                                        <h3
+                                            class="services__item--title heading"
+                                        >
+                                            Cruises
+                                        </h3>
+                                    </a>
+                                    <p class="services__item--desc">
+                                        8 Tours- From <span>850$</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- testimonial -->
+
+                <section class="testimonial">
+                    <div class="row">
+                        <div class="col-5 col-lg-12 testimonial__rela">
+                            <div class="testimonial__media">
+                                <img
+                                    src="./asset/imgs/girl-2.png"
+                                    alt="What our user say"
+                                    class="testimonial__media--img"
+                                />
+                            </div>
+                            <img
+                                src="./asset/icons/shapes-2.svg"
+                                alt="shapes"
+                                class="testimonial__media--icon"
+                            />
+                        </div>
+
+                        <div class="col-6 col-lg-12 gy-lg-3">
+                            <div class="testimonial__content">
+                                <h2 class="heading testimonial__heading">
+                                    What our user say
+                                </h2>
+                                <p class="testimonial__desc">
+                                    “Adding live social proof was the #1 driver
+                                    of increased revenue in all my experiments
+                                    while at Airkey.” and the bran must survive
+                                    atleast 1 year.
+                                </p>
+
+                                <div class="testimonial__profile">
+                                    <div class="testimonial__profile--ui">
+                                        <a href="#!">
+                                            <img
+                                                src="./asset/imgs/ui.png"
+                                                alt="Raul van Sutoyo"
+                                                class="testimonial__ui--img"
+                                            />
+                                        </a>
+                                    </div>
+
+                                    <div>
+                                        <a href="#!">
+                                            <span
+                                                class="testimonial__profile--name"
+                                                >Raul van Sutoyo</span
+                                            >
+                                        </a>
+
+                                        <p class="testimonial__profile--work">
+                                            UI Designer
+                                        </p>
+
+                                        <div class="rating">
+                                            <img
+                                                src="./asset/icons/Star.svg"
+                                                alt="star"
+                                                class="rating__icon"
+                                            />
+                                            <img
+                                                src="./asset/icons/Star.svg"
+                                                alt="star"
+                                                class="rating__icon"
+                                            />
+                                            <img
+                                                src="./asset/icons/Star.svg"
+                                                alt="star"
+                                                class="rating__icon"
+                                            />
+                                            <img
+                                                src="./asset/icons/Star.svg"
+                                                alt="star"
+                                                class="rating__icon"
+                                            />
+                                            <img
+                                                src="./asset/icons/Star.svg"
+                                                alt="star"
+                                                class="rating__icon"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- guiding -->
+
+                <section class="guiding">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="guiding__top">
+                                <h2 class="heading">
+                                    Articles & Travel Guidings
+                                </h2>
+                                <p class="desc guiding__desc">
+                                    Travel has helped us to understand the
+                                    meaning of life and it has helped us become
+                                    better people. Each time we travel, we see
+                                    the world with new eyes.
+                                </p>
+                                <div class="guiding__stock"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <divc class="guiding__inner">
+                        <div class="row row-cols-2 row-cols-lg-1">
+                            <div class="col">
+                                <div class="guiding__left">
+                                    <a href="#!">
+                                        <img
+                                            src="./asset/imgs/guiding-1.png"
+                                            alt="The real voyage does not consist in
+                                        seeking new"
+                                            class="guiding__left--img"
+                                        />
+                                    </a>
+                                    <div class="guiding__left--content">
+                                        <div>
+                                            <a href="#!">
+                                                <h3
+                                                    class="heading guiding__left--title"
+                                                >
+                                                    The real voyage does not
+                                                    consist in seeking new
+                                                </h3>
+                                            </a>
+                                            <p class="desc guiding__left--desc">
+                                                Excited him now natural saw
+                                                passage offices you minuter. At
+                                                by asked being court hopes.
+                                            </p>
+                                        </div>
+
+                                        <span class="guiding__date">
+                                            Jun 1, 2021
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="guiding__right">
+                                    <article class="guiding__item">
+                                        <a href="#!">
+                                            <img
+                                                src="./asset/imgs/guiding-2.png"
+                                                alt="Mountains is always right
+                                                destination."
+                                                class="guiding__item--img"
+                                            />
+                                        </a>
+                                        <div class="guiding__item--content">
+                                            <a href="#!">
+                                                <h5 class="heading">
+                                                    Mountains is always right
+                                                    destination.
+                                                </h5>
+                                            </a>
+                                            <p class="desc guiding__item--desc">
+                                                Farther so friends am to detract
+                                                forbade
+                                            </p>
+                                            <span class="guiding__date">
+                                                Jun 1, 2021
+                                            </span>
+                                        </div>
+                                    </article>
+
+                                    <article class="guiding__item">
+                                        <a href="#!">
+                                            <img
+                                                src="./asset/imgs/guiding-3.png"
+                                                alt="Here Our's Life is either a daring adventure."
+                                                class="guiding__item--img"
+                                            />
+                                        </a>
+                                        <div class="guiding__item--content">
+                                            <a href="#!">
+                                                <h5 class="heading">
+                                                    Here Our's Life is either a
+                                                    daring adventure.
+                                                </h5>
+                                            </a>
+                                            <p class="desc guiding__item--desc">
+                                                One of the programs is Save Our
+                                                I have personally.
+                                            </p>
+                                            <span class="guiding__date">
+                                                Jun 1, 2021
+                                            </span>
+                                        </div>
+                                    </article>
+
+                                    <article class="guiding__item">
+                                        <a href="#!">
+                                            <img
+                                                src="./asset/imgs/guiding-4.png"
+                                                alt="Here Our's Life is either a daring adventure."
+                                                class="guiding__item--img"
+                                            />
+                                        </a>
+                                        <div class="guiding__item--content">
+                                            <a href="#!">
+                                                <h5 class="heading">
+                                                    Here Our's Life is either a
+                                                    daring adventure.
+                                                </h5>
+                                            </a>
+                                            <p class="desc guiding__item--desc">
+                                                life is either a daring
+                                                adventure or it's nothing
+                                            </p>
+                                            <span class="guiding__date">
+                                                Jun 1, 2021
+                                            </span>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </divc>
+                </section>
+
+                <!-- newsletter -->
+
+                <section id="newsletter" class="newsletter"></section>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        fetch("./templates/newsletter.html")
+                            .then((response) => {
+                                if (!response.ok)
+                                    throw new Error(
+                                        "Network response was not ok"
+                                    );
+                                return response.text();
+                            })
+                            .then((newsletter) => {
+                                document.querySelector(
+                                    "#newsletter"
+                                ).innerHTML = newsletter;
+                            });
+                    });
+                </script>
             </div>
         </main>
 
@@ -191,5 +1308,7 @@
                     });
             });
         </script>
+
+        <script src="./asset/js/main.js"></script>
     </body>
 </html>

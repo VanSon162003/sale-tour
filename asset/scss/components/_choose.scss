@@ -1,0 +1,80 @@
+@use "../utils/" as ut;
+
+.choose {
+    margin-top: 140px;
+    padding: 0 36px;
+    @include ut.screen(lg) {
+        padding: 0;
+        margin-top: 60px;
+    }
+
+    .col.dn {
+        @include ut.screen(lg) {
+            display: none;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        height: 518px;
+        border-radius: 64px;
+        object-fit: cover;
+    }
+
+    &__content {
+        margin-top: 19px;
+        padding-left: 23px;
+
+        @include ut.screen(lg) {
+            margin-top: 0;
+            padding-left: 0;
+        }
+    }
+
+    &__heading.heading {
+        @include ut.screen(lg) {
+            font-size: 2.4rem;
+            font-weight: 700;
+            line-height: 32px;
+        }
+    }
+
+    &__desc {
+        margin-top: 16px;
+
+        @include ut.screen(lg) {
+            &.desc {
+                font-style: 1.4rem;
+                line-height: 20px;
+            }
+        }
+    }
+
+    &__introduce {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 60px;
+        width: 403px;
+
+        @include ut.screen(md) {
+            width: 297px;
+        }
+
+        &--item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        &--desc {
+            margin-top: 8px;
+
+            @include ut.screen(lg) {
+                font-size: 1rem;
+                line-height: 16px;
+            }
+        }
+    }
+}

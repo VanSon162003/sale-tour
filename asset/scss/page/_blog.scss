@@ -1,0 +1,95 @@
+@use "../utils/" as ut;
+
+#blog {
+    .blog {
+        &__top {
+            position: relative;
+
+            margin-top: 120px;
+            margin-bottom: 140px;
+
+            @include ut.screen(lg) {
+                margin-top: 52px;
+                margin-bottom: 70px;
+            }
+
+            &--heading {
+                text-align: center;
+            }
+
+            &--img {
+                position: absolute;
+                z-index: -1;
+                top: -17rem;
+                left: 37rem;
+
+                @include ut.screen(lg) {
+                    width: 189.42px;
+                    height: 192px;
+
+                    top: -7rem;
+                    left: 25rem;
+                }
+
+                @include ut.screen(md) {
+                    top: -6rem;
+                    left: 14rem;
+                }
+
+                @include ut.screen(sm) {
+                    top: -6rem;
+                    left: 10rem;
+                }
+            }
+        }
+
+        &__list {
+            margin-top: 112px;
+        }
+
+        &__item {
+            &--img {
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 10px;
+
+                transition: 0.4s;
+
+                &:hover {
+                    translate: 0 -15px;
+                }
+            }
+
+            &--title {
+                margin-top: 20px;
+
+                @include ut.screen(lg) {
+                    font-size: 2rem;
+                    line-height: 30px;
+                    font-weight: 600;
+                }
+            }
+
+            &--desc {
+                margin-top: 16px;
+            }
+
+            &--link {
+                display: inline-block;
+                margin-top: 20px;
+
+                font-size: 2rem;
+                font-weight: 500;
+                line-height: 30px;
+
+                color: var(--primary-color);
+
+                @include ut.screen(lg) {
+                    font-size: 1.6rem;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+}

@@ -1,3 +1,5 @@
+@use "../utils/" as ut;
+
 *,
 ::before,
 ::after {
@@ -10,8 +12,10 @@ html {
 
 body {
     font-size: 1.6rem;
-    font-family: "Inter", serif;
+    font-family: var(--font-inter);
     color: var(--primary-text-color);
+
+    overflow-x: hidden;
 }
 
 button,
@@ -41,7 +45,7 @@ input {
 }
 
 .heading {
-    font-family: var(--font--poppins);
+    font-family: var(--font-poppins);
     color: var(--heading-color);
 }
 
@@ -80,4 +84,20 @@ h5.heading {
 .desc--sm {
     font-size: 1.4rem;
     line-height: 20px;
+}
+
+@include ut.screen(lg) {
+    h1.heading {
+        font-size: 4rem;
+        line-height: 50px;
+    }
+    h2.heading {
+        font-size: 2.4rem;
+        line-height: 32px;
+    }
+
+    .desc {
+        font-size: 1.4rem;
+        line-height: 20px;
+    }
 }

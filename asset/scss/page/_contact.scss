@@ -1,0 +1,180 @@
+@use "../utils/" as ut;
+#contact {
+    position: relative;
+
+    #header {
+        background-color: transparent;
+    }
+
+    .contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 502px;
+
+        &__heading {
+            font-size: 13.6rem;
+            line-height: 150px;
+
+            color: var(--primary-color);
+
+            @include ut.screen(lg) {
+                font-size: 6.4rem;
+                line-height: 50px;
+            }
+
+            @include ut.screen(md) {
+                font-size: 4rem;
+            }
+        }
+
+        &__img {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            height: 590px;
+            width: 100vw;
+            object-fit: cover;
+        }
+
+        &__infomation {
+            display: flex;
+
+            width: 100vw;
+            height: 628px;
+
+            @include ut.screen(xl) {
+                margin-top: 60px;
+                flex-direction: column;
+                height: 632px;
+            }
+
+            &--left {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                width: 50%;
+                height: 100%;
+                background-color: #ececec;
+
+                @include ut.screen(xl) {
+                    background-color: #fff;
+                    align-items: flex-start;
+
+                    margin-left: 8.6%;
+                }
+
+                @include ut.screen(lg) {
+                    margin-left: 15.2%;
+                }
+            }
+
+            &--link {
+                margin-top: 30px;
+
+                display: flex;
+                align-items: center;
+                gap: 22px;
+
+                @include ut.screen(xl) {
+                    margin-top: 20px;
+                }
+
+                &:first-child {
+                    margin-top: 0;
+                }
+
+                a {
+                    font-size: 2rem;
+                    line-height: 30px;
+
+                    color: var(--heading-color);
+                }
+            }
+
+            &--right {
+                width: 50%;
+                height: 100%;
+                padding: 80px 135px 80px 92px;
+
+                @include ut.screen(xl) {
+                    margin-top: 40px;
+                    margin-left: 8.6%;
+                    // width: 100%;
+                    padding: 0;
+                }
+
+                @include ut.screen(lg) {
+                    margin-left: 15.2%;
+                }
+            }
+
+            &--form {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                width: 485px;
+
+                @include ut.screen(sm) {
+                    width: 335px;
+                }
+                button[type="submit"] {
+                    margin-top: 30px;
+
+                    @include ut.screen(xl) {
+                        margin-top: 24px;
+                    }
+                }
+            }
+
+            &--input {
+                margin-top: 20px;
+                padding: 20px;
+
+                width: 100%;
+
+                border: 1px solid #ececec;
+                border-radius: 12px;
+
+                font-size: 1.6rem;
+                font-weight: 400;
+                line-height: 26px;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+
+                &:nth-child(4) {
+                    padding-bottom: 68px;
+
+                    @include ut.screen(xl) {
+                        padding-bottom: 52px;
+                    }
+                }
+
+                @include ut.screen(xl) {
+                    margin-top: 16px;
+                }
+            }
+        }
+    }
+
+    .contact__map {
+        height: 510px;
+        width: 100%;
+
+        @include ut.screen(xl) {
+            margin-top: 60px;
+        }
+        &--img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

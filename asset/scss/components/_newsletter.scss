@@ -1,0 +1,82 @@
+@use "../utils/" as ut;
+
+.newsletter {
+    @include ut.screen(lg) {
+        display: none;
+    }
+
+    position: relative;
+    // z-index: -1;
+    margin-top: 184px;
+    padding: 70px 0;
+    border-radius: 20px;
+    background-color: rgba(232, 196, 0, 1);
+
+    &__icons--triang,
+    &__icons--cricle {
+        position: absolute;
+    }
+
+    &__icons--triang {
+        top: -20px;
+        left: 79px;
+    }
+
+    &__icons--cricle {
+        bottom: 110px;
+        right: 139px;
+        @include ut.screen(xl) {
+            right: 90px;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__heading {
+        width: 512px;
+        color: #fff;
+    }
+
+    &__desc {
+        font-family: var(--font-poppins);
+        text-align: center;
+        margin-top: 6px;
+
+        width: 425px;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    &__form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 10px 12px 10px 26px;
+        margin-top: 41px;
+        width: 450px;
+        border-radius: 12px;
+        background-color: #fff;
+    }
+
+    &__input::placeholder {
+        color: rgba(179, 180, 181, 1);
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        background-color: rgba(246, 111, 77, 1);
+        box-shadow: 0 5px 14px 0 rgba(247, 103, 67, 0.25);
+    }
+}

@@ -1,0 +1,95 @@
+@use "../utils/" as ut;
+#destination {
+    position: relative;
+
+    #header {
+        background-color: transparent;
+    }
+
+    .destination {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        height: 502px;
+
+        &__heading {
+            font-size: 13.6rem;
+            line-height: 150px;
+
+            color: var(--primary-color);
+
+            @include ut.screen(lg) {
+                font-size: 4rem;
+                line-height: 50px;
+            }
+        }
+
+        &__title.heading {
+            margin-top: 6px;
+            color: #fff;
+
+            @include ut.screen(lg) {
+                font-size: 1.6rem;
+                line-height: 26px;
+            }
+        }
+
+        &__img {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            height: 590px;
+            width: 100vw;
+            object-fit: cover;
+        }
+    }
+
+    // option
+
+    .option {
+        margin-top: 140px;
+
+        @include ut.screen(lg) {
+            margin-top: 60px;
+        }
+
+        &__img {
+            width: 100%;
+            height: 180px;
+            border-radius: 8px;
+            object-fit: cover;
+            @include ut.screen(sm) {
+                width: 270px;
+            }
+        }
+
+        &__item {
+            transition: 0.4s;
+            &:hover {
+                translate: 0 -15px;
+            }
+
+            @include ut.screen(sm) {
+                // width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+        }
+
+        &__title {
+            margin-top: 20px;
+        }
+    }
+
+    .action {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+    }
+}

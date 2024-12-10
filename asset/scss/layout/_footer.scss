@@ -1,13 +1,14 @@
 @use "../utils/" as ut;
 .footer {
     @include ut.screen(lg) {
+        margin-top: 60px;
         .nav {
             position: relative;
             inset: 0;
             padding: 0;
             background: transparent;
             translate: 0 0;
-            z-index: 0;
+            // z-index: -1;
         }
 
         .header__inner {
@@ -28,7 +29,6 @@
             }
         }
     }
-
     margin: 140px 0 50px;
 
     &__heading {

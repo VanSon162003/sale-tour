@@ -3,7 +3,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 48px;
     color: #fff;
     border-radius: 8px;
     user-select: none;
@@ -12,17 +11,36 @@
         font-family: var(--font-poppins);
         padding: 0 32px;
 
+        height: 66px;
+        min-width: 191px;
+
         background-color: var(--primary-color);
         box-shadow: 0 30px 30px -18px var(--btn-primary-shadow);
 
         font-size: 1.8rem;
         font-weight: 600;
+        line-height: 18px;
+
+        &.btn--primary-sm {
+            font-family: var(--font-inter);
+
+            min-width: 117px;
+            font-size: 1.6rem;
+            line-height: 26px;
+            height: 54px;
+        }
+
         @include ut.screen(lg) {
+            height: 58px;
             padding: 0 20px;
+
+            font-size: 1.6rem;
+            line-height: 22px;
         }
     }
     &--header {
         padding: 0 28px;
+        height: 48px;
 
         font-family: var(--font-poppins);
         font-size: 1.2rem;
@@ -32,6 +50,8 @@
 
     &--routed {
         padding: 0 16px;
+        height: 38px;
+
         background-color: transparent;
         border: 1px solid var(--sub-primary-color);
         color: var(--sub-primary-color);
@@ -51,10 +71,14 @@
         background-color: var(--btn-search-color);
         box-shadow: 0 25px 25px -20px var(--btn-search-shadow);
 
+        height: 64px;
+
         font-size: 1.8rem;
         font-weight: 500;
+        line-height: 16px;
 
         @include ut.screen(lg) {
+            height: 52px;
             padding: 0 20px;
         }
     }

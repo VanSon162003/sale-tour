@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Safe Tour</title>
+
+        <!-- favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./asset/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./asset/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./asset/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./asset/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./asset/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./asset/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./asset/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./asset/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./asset/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./asset/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./asset/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./asset/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./asset/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./asset/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./asset/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- font style -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- css -->
+        <link rel="stylesheet" href="./asset/css/main.min.css" />
+    </head>
+    <body id="destination">
+        <!-- header -->
+        <header id="header" class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <!-- logo -->
+                    <div class="logo">
+                        <a href="#!">
+                            <img src="./asset/imgs/Logo.png" alt="Safe Tour" />
+                        </a>
+                    </div>
+
+                    <!-- tablet & mobile -->
+
+                    <input
+                        type="checkbox"
+                        name="checkbox"
+                        id="checkbox"
+                        hidden
+                    />
+                    <div class="menu" hidden>
+                        <label for="checkbox">
+                            <img src="./asset/icons/Menu.svg" alt="menu" />
+                        </label>
+                    </div>
+
+                    <label for="checkbox" class="overlay" hidden></label>
+
+                    <!-- navbar -->
+                    <nav class="nav">
+                        <label for="checkbox" class="close" hidden>
+                            <img src="./asset/icons/arrow.svg" alt="arrow" />
+                        </label>
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="./index.html" class="nav__link"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="nav__item">
+                                <a href="./about.html" class="nav__link"
+                                    >About</a
+                                >
+                            </li>
+                            <li class="nav__item active">
+                                <a href="./destinations.html" class="nav__link"
+                                    >Destinations</a
+                                >
+                            </li>
+                            <li class="nav__item">
+                                <a href="./blog.html" class="nav__link">Blog</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="./pages.html" class="nav__link"
+                                    >Pages</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <a href="./contact.html" class="btn btn--header"
+                        >Contact us</a
+                    >
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <!-- Destinations -->
+                <div class="destination">
+                    <span class="destination__heading">Destinations</span>
+                    <h4 class="destination__title heading">
+                        Explore Tours By Destinations
+                    </h4>
+                    <img
+                        src="./asset/imgs/destination.png"
+                        alt="Destinations "
+                        class="destination__img"
+                    />
+                </div>
+
+                <!-- option -->
+
+                <div class="option">
+                    <div
+                        class="row row-cols-4 row-cols-lg-2 row-cols-sm-1 gy-4 gy-lg-2"
+                    >
+                        <div class="col">
+                            <div class="option__item">
+                                <a href="#!">
+                                    <img
+                                        class="option__img"
+                                        src="./asset/imgs/option-1.png"
+                                        alt="Switzerland"
+                                    />
+                                </a>
+                                <a href="#!">
+                                    <h4 class="option__title heading">
+                                        Switzerland
+                                    </h4>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="option__item">
+                                <a href="#!">
+                                    <img
+                                        class="option__img"
+                                        src="./asset/imgs/option-2.png"
+                                        alt="Maldives"
+                                    />
+                                </a>
+                                <a href="#!"
+                                    ><h4 class="option__title heading">
+                                        Maldives
+                                    </h4></a
+                                >
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="option__item">
+                                <a href="#!">
+                                    <img
+                                        class="option__img"
+                                        src="./asset/imgs/option-3.png"
+                                        alt="Indonesia"
+                                    />
+                                </a>
+                                <a href="#!"
+                                    ><h4 class="option__title heading">
+                                        Indonesia
+                                    </h4></a
+                                >
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="option__item">
+                                <a href="#!">
+                                    <img
+                                        class="option__img"
+                                        src="./asset/imgs/option-4.png"
+                                        alt="Bangladesh"
+                                    />
+                                </a>
+                                <a href="#!">
+                                    <h4 class="option__title heading">
+                                        Bangladesh
+                                    </h4>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="option__item">
+                                <a href="#!">
+                                    <img
+                                        class="option__img"
+                                        src="./asset/imgs/option-5.png"
+                                        alt="Thailand"
+                                    />
+                                </a>
+                                <a href="#!"
+                                    ><h4 class="option__title heading">
+                                        Thailand
+                                    </h4></a
+                                >
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="option__item">
+                                <a href="#!">
+                                    <img
+                                        class="option__img"
+                                        src="./asset/imgs/option-6.png"
+                                        alt="Turkey"
+                                    />
+                                </a>
+                                <a href="#!"
+                                    ><h4 class="option__title heading">
+                                        Turkey
+                                    </h4></a
+                                >
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="option__item">
+                                <a href="#!">
+                                    <img
+                                        class="option__img"
+                                        src="./asset/imgs/option-7.png"
+                                        alt="Agentina"
+                                    />
+                                </a>
+                                <a href="#!"
+                                    ><h4 class="option__title heading">
+                                        Agentina
+                                    </h4></a
+                                >
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="option__item">
+                                <a href="#!">
+                                    <img
+                                        class="option__img"
+                                        src="./asset/imgs/option-8.png"
+                                        alt="Brazil"
+                                    />
+                                </a>
+                                <a href="#!"
+                                    ><h4 class="option__title heading">
+                                        Brazil
+                                    </h4></a
+                                >
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="option__item">
+                                <a href="#!">
+                                    <img
+                                        class="option__img"
+                                        src="./asset/imgs/option-9.png"
+                                        alt="Morocco"
+                                    />
+                                </a>
+                                <a href="#!">
+                                    <h4 class="option__title heading">
+                                        Morocco
+                                    </h4></a
+                                >
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="option__item">
+                                <a href="#!">
+                                    <img
+                                        class="option__img"
+                                        src="./asset/imgs/option-10.png"
+                                        alt="Dubai"
+                                    />
+                                </a>
+                                <a href="#!"
+                                    ><h4 class="option__title heading">
+                                        Dubai
+                                    </h4></a
+                                >
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="option__item">
+                                <a href="#!">
+                                    <img
+                                        class="option__img"
+                                        src="./asset/imgs/option-11.png"
+                                        alt="Ecuador"
+                                    />
+                                </a>
+                                <a href="#!"
+                                    ><h4 class="option__title heading">
+                                        Ecuador
+                                    </h4></a
+                                >
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="option__item">
+                                <a href="#!">
+                                    <img
+                                        class="option__img"
+                                        src="./asset/imgs/option-12.png"
+                                        alt="Colombia"
+                                    />
+                                </a>
+                                <a href="#!"
+                                    ><h4 class="option__title heading">
+                                        Colombia
+                                    </h4></a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action">
+                    <button class="btn btn--primary">See more</button>
+                </div>
+            </div>
+        </main>
+
+        <!-- footer -->
+        <footer id="footer" class="footer"></footer>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                fetch("./templates/footer.html")
+                    .then((response) => {
+                        if (!response.ok)
+                            throw new Error("Network response was not ok");
+                        return response.text();
+                    })
+                    .then((footer) => {
+                        document.querySelector("#footer").innerHTML = footer;
+                    });
+            });
+        </script>
+    </body>
+</html>
