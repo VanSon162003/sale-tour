@@ -2,6 +2,7 @@
 .footer {
     @include ut.screen(lg) {
         margin-top: 60px;
+
         .nav {
             position: relative;
             inset: 0;

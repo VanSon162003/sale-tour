@@ -3,6 +3,9 @@
 #blog-more {
     .recent {
         margin-top: 106px;
+        @include ut.screen(lg) {
+            margin-top: 40px;
+        }
     }
 
     .blog-more {
@@ -17,6 +20,8 @@
         }
 
         &__title {
+            font-family: var(--font-inter);
+
             color: var(--primary-color);
             margin-top: 30px;
 

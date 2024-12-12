@@ -14,6 +14,8 @@
         height: 502px;
 
         &__heading {
+            font-family: var(--font-poppins);
+
             font-size: 13.6rem;
             line-height: 150px;
 
@@ -44,6 +46,9 @@
 
     .who {
         margin-top: 140px;
+        @include ut.screen(lg) {
+            margin-top: 60px;
+        }
 
         .row {
             align-items: center;
@@ -95,6 +100,9 @@
 
     .meet {
         margin-top: 140px;
+        @include ut.screen(lg) {
+            margin-top: 60px;
+        }
         &__heading {
             text-align: center;
         }
@@ -122,6 +130,8 @@
         }
 
         &__name {
+            font-family: var(--font-poppins);
+
             display: inline-block;
             margin-top: -8px;
             font-size: 2rem;

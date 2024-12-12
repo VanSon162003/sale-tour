@@ -7,6 +7,8 @@
     }
 
     .contact {
+        font-family: var(--font-poppins);
+
         display: flex;
         align-items: center;
         justify-content: center;
@@ -79,6 +81,10 @@
                 display: flex;
                 align-items: center;
                 gap: 22px;
+
+                a {
+                    font-family: var(--font-poppins);
+                }
 
                 @include ut.screen(xl) {
                     margin-top: 20px;

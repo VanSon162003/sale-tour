@@ -45,6 +45,9 @@
 
         &__list {
             margin-top: 112px;
+            @include ut.screen(lg) {
+                margin-top: 60px;
+            }
         }
 
         &__item {
@@ -62,6 +65,8 @@
             }
 
             &--title {
+                font-family: var(--font-inter);
+
                 margin-top: 20px;
 
                 @include ut.screen(lg) {
@@ -76,6 +81,8 @@
             }
 
             &--link {
+                font-family: var(--font-poppins);
+
                 display: inline-block;
                 margin-top: 20px;
 

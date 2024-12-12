@@ -16,7 +16,7 @@
         @extend %d-flex;
     }
 
-    .btn {
+    .nav--btn {
         @include ut.screen(lg) {
             display: none;
         }
@@ -49,6 +49,16 @@
         font-size: 1.4rem;
         font-weight: 500;
         line-height: 16px;
+
+        &:last-child {
+            display: none;
+            @include ut.screen(lg) {
+                display: block;
+                &:hover::after {
+                    width: 0;
+                }
+            }
+        }
 
         &::after,
         &.active::before {

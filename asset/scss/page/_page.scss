@@ -45,6 +45,9 @@
 
         &__list {
             margin-top: 100px;
+            @include ut.screen(lg) {
+                margin-top: 60px;
+            }
         }
 
         &__item {
