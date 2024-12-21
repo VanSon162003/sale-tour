@@ -64,6 +64,11 @@
         background-color: #fff;
     }
 
+    &__input {
+        width: 100%;
+        padding-right: 30px;
+    }
+
     &__input::placeholder {
         color: rgba(179, 180, 181, 1);
     }
